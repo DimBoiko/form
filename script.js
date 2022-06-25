@@ -1,4 +1,4 @@
- const form = document.querySelector('.tickets')
+const form = document.querySelector('.tickets')
 const inputs = document.querySelectorAll('.form__input')
 const passengersBlock = document.querySelector('.passengers')
 const passengersChangeBlock = document.querySelector('.form__item-passengers')
@@ -439,7 +439,8 @@ passengersValueInput.addEventListener("input",(e)=>{
 	}
 })
 
-document.addEventListener(eventName,(e)=>{
+
+document.onclick = (e)=>{
 	if(!e.path.includes(routeBlock)){
 		routeBlock.style.opacity = 0
 		routeBlock.style.zIndex = -1; 
@@ -448,9 +449,9 @@ document.addEventListener(eventName,(e)=>{
 	if(!e.path.includes(passengersBlock)){
 		passengersChangeBlock.classList.remove('show-passengers')
 	}
-})
+}
 
-form.addEventListener(eventName,(e)=>{
+form.onclick = (e)=>{
 	if(
 		passengersChangeBlock.classList.contains('show-passengers')
 		&& 
@@ -486,10 +487,10 @@ form.addEventListener(eventName,(e)=>{
 		findTickets(e)
 	}
 
-})
+}
 
 formInput.addEventListener('input',(e)=>fromInputHandler(e))
 
 whereInput.addEventListener('input',(e)=>whereInputHandler(e))
 
-routeItems.addEventListener(eventName,(e)=>routesHandler(e))
+routeItems.onclick = (e)=>routesHandler(e)
