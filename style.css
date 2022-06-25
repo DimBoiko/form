@@ -72,6 +72,7 @@ body{
 	align-items: center;
 }
 .form__item-input{
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 }
@@ -144,6 +145,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	cursor: pointer;
 	font-size: 20px;
 }
 .form__item.passengers:hover{
@@ -169,12 +171,14 @@ body{
 	text-align: center;
 	font-size: 18px;
 }
+
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0; 
 }
 
 .form__btn{
+	cursor: pointer;
 	margin-left: 20px;
 	
 }
@@ -221,6 +225,7 @@ input::-webkit-inner-spin-button {
 }
 
 .routes__items {
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -414,6 +419,7 @@ input::-webkit-inner-spin-button {
 		font-size: 13px;
 	}
 	.form__item-passengers{
+		cursor: pointer;
 		width: 45vw;
 		padding: 10px 0px;
 	}
@@ -666,4 +672,8 @@ input::-webkit-inner-spin-button {
 	.founded-tickets__buy{
 		transform: translateY(0%);
 	}
+}
+
+.form__item-passenger-btn{
+	cursor: pointer;
 }

@@ -423,6 +423,11 @@ const routesHandler = (e) => {
 }
 
 // Listeners
+const iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i)
+let eventName = 'click'
+if(iOS){
+	eventName = 'touchstart'
+}
 
 passengersValueInput.addEventListener("input",(e)=>{
 	if(e.target.value > 0 && e.target.value < 100){
@@ -437,7 +442,7 @@ passengersValueInput.addEventListener("input",(e)=>{
 	}
 })
 
-document.addEventListener('click',(e)=>{
+document.addEventListener(eventName,(e)=>{
 	if(!e.path.includes(routeBlock)){
 		routeBlock.style.opacity = 0
 		routeBlock.style.zIndex = -1; 
@@ -448,7 +453,7 @@ document.addEventListener('click',(e)=>{
 	}
 })
 
-form.addEventListener('click',(e)=>{
+form.addEventListener(eventName,(e)=>{
 	if(
 		passengersChangeBlock.classList.contains('show-passengers')
 		&& 
@@ -490,4 +495,4 @@ formInput.addEventListener('input',(e)=>fromInputHandler(e))
 
 whereInput.addEventListener('input',(e)=>whereInputHandler(e))
 
-routeItems.addEventListener('click',(e)=>routesHandler(e))
+routeItems.addEventListener(eventName,(e)=>routesHandler(e))
