@@ -1,4 +1,4 @@
-const form = document.querySelector('.tickets')
+ const form = document.querySelector('.tickets')
 const inputs = document.querySelectorAll('.form__input')
 const passengersBlock = document.querySelector('.passengers')
 const passengersChangeBlock = document.querySelector('.form__item-passengers')
