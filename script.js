@@ -440,7 +440,7 @@ passengersValueInput.addEventListener("input",(e)=>{
 })
 
 
-document.onclick = (e)=>{
+document.ontouchend  = (e)=>{
 	if(!e.path.includes(routeBlock)){
 		routeBlock.style.opacity = 0
 		routeBlock.style.zIndex = -1; 
@@ -451,7 +451,7 @@ document.onclick = (e)=>{
 	}
 }
 
-form.onclick = (e)=>{
+form.ontouchend  = (e)=>{
 	if(
 		passengersChangeBlock.classList.contains('show-passengers')
 		&& 
@@ -493,4 +493,4 @@ formInput.addEventListener('input',(e)=>fromInputHandler(e))
 
 whereInput.addEventListener('input',(e)=>whereInputHandler(e))
 
-routeItems.onclick = (e)=>routesHandler(e)
+routeItems.ontouchend = (e)=>routesHandler(e)
