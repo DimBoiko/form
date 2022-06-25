@@ -439,8 +439,8 @@ passengersValueInput.addEventListener("input",(e)=>{
 	}
 })
 
-
-document.addEventListener('touchend',(e)=>{
+document.addEventListener('click',(e)=>{
+	console.log(e.target)
 	if(!e.path.includes(routeBlock)){
 		routeBlock.style.opacity = 0
 		routeBlock.style.zIndex = -1; 
@@ -449,8 +449,8 @@ document.addEventListener('touchend',(e)=>{
 	if(!e.path.includes(passengersBlock)){
 		passengersChangeBlock.classList.remove('show-passengers')
 	}
-}) 
-form.addEventListener('touchend',(e)=>{
+})  
+form.onclick = (e)=>{
 	if(
 		passengersChangeBlock.classList.contains('show-passengers')
 		&& 
@@ -486,10 +486,10 @@ form.addEventListener('touchend',(e)=>{
 		findTickets(e)
 	}
 
-})
+}
 
 formInput.addEventListener('input',(e)=>fromInputHandler(e))
 
 whereInput.addEventListener('input',(e)=>whereInputHandler(e))
 
-routeItems.addEventListener('touchend',(e)=>routesHandler(e)) 
+routeItems.onclick = (e)=>routesHandler(e)
