@@ -293,7 +293,7 @@ const fromInputHandler = (e) => {
 		const firstCity = route.split('-')[0].toLowerCase().trim()
 		const secondCity = route.split('-')[1]
 		if(firstCity.includes(e.target.value.toLowerCase().trim())){
-			let routeHTML =  '<div tabindex=%TABINDEX% class="routes__item"><span class="first__city selected-city">%FIRSTCITY%,</span><span class="second__city">%SECONDCITY%</span></div>'
+			let routeHTML =  '<div tabindex=%TABINDEX% class="routes__item" onclick=""><span class="first__city selected-city">%FIRSTCITY%,</span><span class="second__city">%SECONDCITY%</span></div>'
 			return routeHTML.replace('%TABINDEX%',index + 1).replace('%FIRSTCITY%',route.split('-')[0]).replace('%SECONDCITY%',secondCity)
 		}
 
@@ -349,7 +349,7 @@ const whereInputHandler = (e) => {
 		const secondCity = route.split('-')[1].toLowerCase().trim()
 
 		if(secondCity.includes(e.target.value.toLowerCase().trim())){
-			let routeHTML =  '<div tabindex=%TABINDEX% class="routes__item"><span class="first__city">%FIRSTCITY%,</span><span class="second__city selected-city">%SECONDCITY%</span></div>'
+			let routeHTML =  '<div tabindex=%TABINDEX% class="routes__item" onclick=""><span class="first__city">%FIRSTCITY%,</span><span class="second__city selected-city">%SECONDCITY%</span></div>'
 			return routeHTML.replace('%TABINDEX%',index + 1).replace('%FIRSTCITY%',firstCity).replace('%SECONDCITY%',route.split('-')[1])
 		}
 	}).filter((route) => route)
@@ -423,11 +423,8 @@ const routesHandler = (e) => {
 }
 
 // Listeners
-const iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i)
 let eventName = 'click'
-if(iOS){
-	eventName = 'touchstart'
-}
+
 
 passengersValueInput.addEventListener("input",(e)=>{
 	if(e.target.value > 0 && e.target.value < 100){
