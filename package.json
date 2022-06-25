@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DimBoiko/form/issues"
   },
-  "homepage": "https://github.com/DimBoiko/form#readme"
+  "homepage": "https://github.com/DimBoiko/form#readme",
+  "dependencies": {
+    "github-pages": "^3.0.2"
+  }
 }
