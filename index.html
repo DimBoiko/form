@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+		<form class="tickets form" action="">
+	
+			<div class="form__items">
+				<div class="form__item from"> 
+					<div class="form__item-input">
+						<label for="from" class="form__item-subtitle">From</label>
+						<input autocomplete="off" maxlength="30" class="form__input" id="from" type="text" value="Kyiv">
+					</div>
+					<svg
+					class="arrows-svg"
+					  width="28"
+					  height="28"
+					  viewBox="0 0 24 24"
+					  fill="none"
+					  xmlns="http://www.w3.org/2000/svg"
+					>
+					  <path
+						 d="M18.3701 7.99993L13.8701 10.598V8.99993H6.88989V12.9999H4.88989V6.99993H13.8701V5.40186L18.3701 7.99993Z"
+						 fill="currentColor"
+					  />
+					  <path
+						 d="M10.1299 16.9999H19.1101V10.9999H17.1101V14.9999H10.1299V13.4019L5.62988 15.9999L10.1299 18.598V16.9999Z"
+						 fill="currentColor"
+					  />
+					</svg>
+				</div>
+	
+				<div class="form__item where"> 
+					<div class="form__item-input">
+						<label for="where" class="form__item-subtitle">Where</label>
+						<input autocomplete="off" maxlength="30" class="form__input" id="where" type="text" value="Odessa">
+					</div>
+				</div>
+	
+				<div class="form__item date"> 
+					<div class="form__item-input">
+						<label for="date" class="form__item-subtitle">Date</label>
+						<input class="form__input"  id="date" type="date">
+						<svg
+	  class="calendar-svg"
+	  width="24"
+	  height="24"
+	  viewBox="0 0 24 24"
+	  fill="none"
+	  xmlns="http://www.w3.org/2000/svg"
+	>
+	  <path
+		 d="M8 13C7.44772 13 7 12.5523 7 12C7 11.4477 7.44772 11 8 11C8.55228 11 9 11.4477 9 12C9 12.5523 8.55228 13 8 13Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M8 17C7.44772 17 7 16.5523 7 16C7 15.4477 7.44772 15 8 15C8.55228 15 9 15.4477 9 16C9 16.5523 8.55228 17 8 17Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M11 16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M16 17C15.4477 17 15 16.5523 15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16C17 16.5523 16.5523 17 16 17Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M16 13C15.4477 13 15 12.5523 15 12C15 11.4477 15.4477 11 16 11C16.5523 11 17 11.4477 17 12C17 12.5523 16.5523 13 16 13Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 d="M8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9H16C16.5523 9 17 8.55228 17 8C17 7.44772 16.5523 7 16 7H8Z"
+		 fill="currentColor"
+	  />
+	  <path
+		 fill-rule="evenodd"
+		 clip-rule="evenodd"
+		 d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5Z"
+		 fill="currentColor"
+	  />
+					</svg>
+					</div>
+					
+				</div>
+				
+				<div class="form__item passengers">
+					<div tabindex="6" class="form__item-input">
+						<span class="form__item-subtitle">Passengers</span>
+						<span class="form__item-passengers-value">1</span>
+						<ul class="form__item-passengers">
+							<div class="form__item-passengers-value-block">
+								<input type="button" class="form__item-passenger-btn remove" value="-">
+								<input max="60" type="number" value="1" class="form__item-passengers-value input">
+								<input type="button" class="form__item-passenger-btn add" value="+">
+							</div>
+						</ul>		
+					</div>		
+					<svg
+					class="user-svg"
+		  width="32"
+		  height="32"
+		  viewBox="0 0 24 24"
+		  fill="none"
+		  xmlns="http://www.w3.org/2000/svg"
+		>
+		  <path
+			 fill-rule="evenodd"
+			 clip-rule="evenodd"
+			 d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+			 fill="currentColor"
+		  />
+		  <path
+			 d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+			 fill="currentColor"
+		  />
+					</svg>
+				</div>
+			</div>
+			
+			<div class="form__btn">
+				<input  class="form__btn-sub" type="submit" value="Find ticket">
+			</div>
+			<div class="routes">
+				<div class="routes__items">
+				</div>
+			</div>
+		</form>
+		
+		<div class="founded-tickets">
+			<div class="founded-tickets__title">
+			</div>
+			<div class="founded-tickets__colum">
+
+				<div class="founded-tickets__item">
+
+					<div class="founded-tickets__from">
+						<div class="founded-tickets__time">
+							<div class="founded-tickets__time-info">
+								<span class="founded-tickets__current-time">22:15</span>
+								<span class="founded-tickets__current-date">23.06</span>
+							</div>
+							<div class="founded-tickets__time-travel">
+								<span class="time-travel-hours">8h</span> 
+								<span class="time-travel-min">15m</span> 
+								<span class="time-travel-road-info">on the road</span> 
+							</div>
+						</div>
+						<div class="founded-tickets__city">
+							Kyiv
+						</div>
+						<div class="founded-tickets__address">
+							Bus station "Central", Demeevskaya square: The House 3a'
+						</div>
+					</div>
+
+					<div class="founded-tickets__where">
+						<div class="founded-tickets__time">
+							<div class="founded-tickets__time-info">
+								<span class="founded-tickets__current-time">05:15</span>
+								<span class="founded-tickets__current-date">24.06</span>
+							</div>
+						</div>
+						<div class="founded-tickets__city">
+							Odessa
+						</div>
+						<div class="founded-tickets__address">
+							Bus station "Privokzalnaya', Starosennaya street; house 1B
+						</div>
+					</div>
+					<hr class="ticket__line">
+					<div class="founded-tickets__buy">
+						<div class="founded-tickets__price">
+							<span class="ticket-price">600</span> UAH
+						</div>
+						<div class="founded-tickets__buy-btn">
+							<button class="buy-ticket-btn">Buy</button>
+						</div>
+					</div>
+
+				</div> 
+				<div class="founded-tickets__item">
+
+					<div class="founded-tickets__from">
+						<div class="founded-tickets__time">
+							<div class="founded-tickets__time-info">
+								<span class="founded-tickets__current-time">22:15</span>
+								<span class="founded-tickets__current-date">23.06</span>
+							</div>
+							<div class="founded-tickets__time-travel">
+								<span class="time-travel-hours">8h</span> 
+								<span class="time-travel-min">15m</span> 
+								<span class="time-travel-road-info">on the road</span> 
+							</div>
+						</div>
+						<div class="founded-tickets__city">
+							Kyiv
+						</div>
+						<div class="founded-tickets__address">
+							Bus station "Central", Demeevskaya square: The House 3a'
+						</div>
+					</div>
+
+					<div class="founded-tickets__where">
+						<div class="founded-tickets__time">
+							<div class="founded-tickets__time-info">
+								<span class="founded-tickets__current-time">05:15</span>
+								<span class="founded-tickets__current-date">24.06</span>
+							</div>
+						</div>
+						<div class="founded-tickets__city">
+							Odessa
+						</div>
+						<div class="founded-tickets__address">
+							Bus station "Privokzalnaya', Starosennaya street; house 1B
+						</div>
+					</div>
+					<hr class="ticket__line">
+					<div class="founded-tickets__buy">
+						<div class="founded-tickets__price">
+							<span class="ticket-price">600</span> UAH
+						</div>
+						<div class="founded-tickets__buy-btn">
+							<button class="buy-ticket-btn">Buy</button>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+	
+	<script src="./script.js"></script>
+</body>
+</html>
